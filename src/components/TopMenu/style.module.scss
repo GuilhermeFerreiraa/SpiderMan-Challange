@@ -1,0 +1,82 @@
+.container {
+  text-transform: uppercase;
+  width: 100vw;
+  position: absolute;
+  height: 100px;
+  top: 0px;
+  z-index: 1000;
+
+  .listContainer {
+    height: 100px;
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+
+    .item {
+      .icon1 {
+        position: absolute;
+        left: 252px;
+        top: 28px;
+        width: 40px;
+        height: 56.19px;
+
+        &:hover {
+          box-shadow: 0 0 10px 0 #ec111a inset, 0 0 10px 2px #ec111a;
+          width: max-content;
+          height: 40px;
+        }
+      }
+      .icon2 {
+        position: absolute;
+        width: 40px;
+        height: 56.19px;
+        left: 940px;
+        top: 22px;
+      }
+    }
+    .icon3 {
+      li {
+        list-style-type: none;
+        a {
+          color: #f9f9f9;
+          text-decoration: none;
+          &:hover{            
+            color: #ddd;
+          }
+        }
+        &:nth-child(1) {
+          position: absolute;
+          width: 64px;
+          height: 25px;
+          left: 1308px;
+          top: 38px;
+        }
+        &:nth-child(2) {
+          position: absolute;
+          width: 93px;
+          height: 25px;
+          left: 1430px;
+          top: 38px;
+        }
+        &:nth-child(3) {
+          position: absolute;
+          width: 86px;
+          height: 25px;
+          left: 1581px;
+          top: 38px;
+        }
+      }
+    }
+  }
+}
+
+.background {
+  top: 0;
+  width: 94.5vw;
+  margin-left: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 0;
+  background: rgba(29, 29, 29, 0.5);
+  filter: blur(2px);
+}
