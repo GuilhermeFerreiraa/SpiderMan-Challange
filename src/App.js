@@ -1,17 +1,17 @@
-import style from './App.module.scss'
+// import style from './App.module.scss'
 
 import LeftMenu from './components/LeftMenu/index';
-import TopMenu from './components/TopMenu/index';
-import Text from './components/Text/index';
+// import TopMenu from './components/TopMenu/index';
+// import Text from './components/Text/index';
 
 export default function App() {
   return (
-    <div className={style.App}>
+    <>
       <LeftMenu />
-      <TopMenu />
+      {/* <TopMenu />
       <div className={style.background}></div>
-      <Text />
-    </div>
+    <Text /> */}
+    </>
     );
 }
 

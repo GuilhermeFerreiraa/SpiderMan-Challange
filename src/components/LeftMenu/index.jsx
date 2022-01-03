@@ -8,38 +8,36 @@ import status from '../../assets/images/statusOn.png'
 
 export default function LeftMenu(){
     return(
-        <>
+        <div className={style.socialMedia}>
         <div className={style.background}></div>
-        <div className={style.container}>
-            <ul className={style.listContainer}>
-                <li className={style.item}>
-                    <a className={style.icon1} href="#?">
-                        <img src={perfil} alt="perfil-img"/>
-                        <img src={status} className={style.status} alt="status-img"/>
-                    </a>
-                </li>
-                <li className={style.item}>
-                    <a className={style.icon2} href="https://www.instagram.com/guilier_me/" target="_blank?">
-                        <img src={instagram} alt="instagram-img" />
-                    </a>
-                </li>
-                <li className={style.item}>
-                    <a className={style.icon3} href="#?" target="_blank?">
-                     <img src={twitter} alt="twitter-img" />
-                    </a>
-                </li>
-                <li className={style.item}>
-                    <a className={style.icon4} href="https://www.facebook.com/guilherme.ferreira.7140497/" target="_blank?">
-                     <img src={facebook} alt="facebook-img" /> 
-                    </a>
-                </li>
-                <li className={style.item}>
-                    <a className={style.icon5} href="#?">
+                <div className={style.search}>
+                    <input type="text" className={style.textSearch} placeholder="Pesquise sobre o Miles"/>
+                    <a className={style.iconSearch} href="#?">
                         <img src={search} alt="search-img" /> 
                     </a>
-                </li>
-            </ul>
+                </div>
+                <ul className={style.container}>
+                    <li>
+                        <a className={style.perfil} href="#?">
+                            <img src={perfil} alt="perfil-img"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a className={style.icon2} href="https://www.instagram.com/guilier_me/" target="_blank?">
+                            <img src={instagram} alt="instagram-img" />
+                        </a>
+                    </li>
+                    <li>
+                        <a className={style.icon3} href="#?" target="_blank?">
+                        <img src={twitter} alt="twitter-img" />
+                        </a>
+                    </li>
+                    <li>
+                        <a className={style.icon4} href="https://www.facebook.com/guilherme.ferreira.7140497/" target="_blank?">
+                        <img src={facebook} alt="facebook-img" /> 
+                        </a>
+                    </li>
+                </ul>  
         </div>
-        </>
     )
 }
