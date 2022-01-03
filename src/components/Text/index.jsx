@@ -5,17 +5,15 @@ import play from '../../assets/images/play.png'
 
 export default function Text(){
     return (
-        <div className={style.content}>
-            <div className={style.Title}>
-                <img src={title} alt="title-img" />
-            </div>
-                <img className={style.subtitle} src={subtitle} alt="subtitle-img" />
-                <button className={style.botao} type="submit"> 
-                    <a href="https://www.youtube.com/watch?v=RKb1jSW56UQ" target="_blank?">
-                        ASSISTA AO TRAILER
-                    </a>
-                    <img src={play} alt="play-img" />
-                </button>
+    <>
+        <div className={style.contentMain}>
+          <img src={title} alt="title" />
+          <img src={subtitle} alt="subtitle" />
         </div>
+        <div className={style.contentBotao}>
+              <a href="#?">Assista ao trailer</a>
+              <img className={style.image} src={play} alt="play-img" />
+        </div>
+    </>
     )
 }
