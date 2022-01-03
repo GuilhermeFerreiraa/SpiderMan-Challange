@@ -5,7 +5,7 @@ import logomarvel from '../../assets/images/logomarvel.png'
 export default function TopMenu(){
     return(
         <>
-        <div className={style.background}></div>
+        {/* <div className={style.background}></div> */}
         <div className={style.container}>
             <ul className={style.listContainer}>
                 <li className={style.item}>

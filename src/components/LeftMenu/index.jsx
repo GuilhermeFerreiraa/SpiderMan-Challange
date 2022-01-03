@@ -11,7 +11,7 @@ export default function LeftMenu(){
         <div className={style.socialMedia}>
         <div className={style.background}></div>
                 <div className={style.search}>
-                    <input type="text" className={style.textSearch} placeholder="Pesquise sobre o Miles"/>
+                    <input type="text" className={style.textSearch} placeholder="Ask for Miles Morales"/>
                     <a className={style.iconSearch} href="#?">
                         <img src={search} alt="search-img" /> 
                     </a>
