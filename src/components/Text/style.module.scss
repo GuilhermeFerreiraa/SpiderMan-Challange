@@ -27,7 +27,7 @@
 
 .contentBotao {
   position: absolute;
-  z-index: 100;
+  z-index: 0;
   display: flex;
   flex-direction: flex;
   justify-content: center;
@@ -46,9 +46,9 @@
     color: #fff;
     font-weight: 600;
     text-align: center;
-    background: #1d1d1d;
     text-transform: uppercase;
     font-size: 20px;
+    margin-top: 1rem;
 
     &::after {
       content: "";
@@ -56,7 +56,7 @@
       position: absolute;
       transform: skewY(-45deg);
       border: 3px solid #ec111a;
-      z-index: 10;
+      z-index: 1;
       top: 7px;
       left: 0;
       border-bottom: none;
@@ -70,7 +70,7 @@
       position: absolute;
       transform: skewY(0deg);
       border: 2px solid #ec111a;
-      z-index: 10;
+      z-index: 1;
       top: -2px;
       width: 83%;
       left: 18px;
@@ -84,7 +84,6 @@
       cursor: pointer;
       box-shadow: 0 0 20px 1px #ec111a;
       border: 3px solid #ec111a;
-      z-index: 1000;
 
       &:hover::before {
         opacity: 5;
