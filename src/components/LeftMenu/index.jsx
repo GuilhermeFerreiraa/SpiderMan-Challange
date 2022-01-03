@@ -4,11 +4,11 @@ import facebook from '../../assets/images/facebook.png'
 import instagram from '../../assets/images/instagram.png'
 import search from '../../assets/images/search.png'
 import twitter from '../../assets/images/twitter.png'
-import status from '../../assets/images/statusOn.png'
 
 export default function LeftMenu(){
     return(
         <div className={style.socialMedia}>
+
         <div className={style.background}></div>
                 <div className={style.search}>
                     <input type="text" className={style.textSearch} placeholder="Ask for Miles Morales"/>
